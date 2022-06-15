@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: azure;
+    font-size: 18px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight:500;
+}
+.flex-container{
+    width: 60%;
+    margin:auto; /* equal spacing left and right*/
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+h1{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 600;
+}
+.flex-item{
+    padding: 2em;
+    flex: 1;
+    min-height: 500px;
+    position: relative;
+}
+
+.flex-item .button{
+    position: absolute;
+    bottom: 2em;
+}
+
+.column1{
+    background-color: rgb(246, 44, 78);
+}
+.column2{
+    background-color: purple;  
+}
+.column3{
+    background-color: darkred;
+}
+img{
+    width: 50px;
+    margin-bottom: 30px;
+}
+.button {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 14px 40px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.button-sedan{
+    color: rgb(246, 44, 78);
+}
+.button-suv{
+    color: purple;
+}
+.button-luxury{
+    color: darkred;
+}
+.button:hover{
+    background: transparent;
+    border: solid 2px white;
+    color: black;
+}
