@@ -9,40 +9,64 @@ body{
     align-items: center;
     min-height: 100vh;
 }
+
 .grid-container{
     display: grid;
     grid-template-areas: 
-        'a a a b b'
-        'c c d d d'
-        'c c e e e'
+        'header header header header header'
+        'main-1 main-1 main-1 main-2 main-2'
+        'main-3 main-3 main-4 main-4 main-4'
+        'main-3 main-3 main-5 main-5 main-5'
     ;
     gap: 10px;
     padding: 10px;
-    width: 50%;
+    width: 60%;
     margin: auto;
 }
-main div{
-    padding: 2em;
-    text-align: center;
-    border-radius: 5px;
-}
 .item-a{
-    background-color: red;
-    grid-area: a;
+    background-color: #333;
+    grid-area: header;
+    overflow: hidden;
 }
 .item-b{
-    background-color: yellow;
-    grid-area: b;
+    background-color: red;
+    grid-area: main-1;
 }
 .item-c{
-    background-color: green;
-    grid-area: c;
+    background-color: yellow;
+    grid-area: main-2;
 }
 .item-d{
-    background-color: lightblue;
-    grid-area: d;
+    background-color: green;
+    grid-area: main-3;
 }
 .item-e{
     background-color: lightblue;
-    grid-area: e;
+    grid-area: main-4;
+}
+.item-f{
+    background-color: lightblue;
+    grid-area: main-5;
+}
+
+/* Style the links inside the navigation bar */
+nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    
+}
+  /* Change the color of links on hover */
+nav a:hover {
+    background-color: #ddd;
+    color: pink;
+}
+.main-top{
+    min-height: 300px;
+}
+.main-bottom{
+    min-height: 200px;
 }
